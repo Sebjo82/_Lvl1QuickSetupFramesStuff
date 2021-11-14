@@ -1,4 +1,4 @@
--- Set Position of Chat-Frame. Hook very important otherwise resets on reload/relog
+-- Hook on login/reload. Calls loadFrames() function which itself calls each individual frame-function.
 hooksecurefunc("FCF_RestorePositionAndDimensions", function(...)
 	loadFrames()
 end)
